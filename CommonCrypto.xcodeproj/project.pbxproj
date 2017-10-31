@@ -11,20 +11,31 @@
 		2DD238701CDA33930008FB1A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD2386F1CDA33930008FB1A /* Security.framework */; };
 		2DD238731CDA35880008FB1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD238721CDA35880008FB1A /* Foundation.framework */; };
 		2DD238831CDA396F0008FB1A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD238821CDA396F0008FB1A /* Security.framework */; };
+		DA32302C1FA81FBD00265223 /* LibCommonCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32302B1FA81FBD00265223 /* LibCommonCryptoTests.swift */; };
+		DA32302E1FA81FBD00265223 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA5398B1CD9161100F45446 /* CommonCrypto.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA32302F1FA81FBD00265223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA539821CD9161100F45446 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA5398A1CD9161100F45446;
+			remoteInfo = iOS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		2DA5398B1CD9161100F45446 /* iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA5398B1CD9161100F45446 /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA5398E1CD9161100F45446 /* CommonCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonCrypto.h; sourceTree = "<group>"; };
 		2DA539901CD9161100F45446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DD238641CDA33130008FB1A /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		2DD2386C1CDA336B0008FB1A /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		2DD2386D1CDA33730008FB1A /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		2DD2386E1CDA33780008FB1A /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		2DD2386F1CDA33930008FB1A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2DD238721CDA35880008FB1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2DD238791CDA380E0008FB1A /* Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DD238791CDA380E0008FB1A /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD238821CDA396F0008FB1A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		DA3230291FA81FBD00265223 /* LibCommonCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibCommonCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA32302B1FA81FBD00265223 /* LibCommonCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibCommonCryptoTests.swift; sourceTree = "<group>"; };
+		DA32302D1FA81FBD00265223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,14 +56,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA3230261FA81FBD00265223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA32302E1FA81FBD00265223 /* CommonCrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2DA539811CD9161100F45446 = {
 			isa = PBXGroup;
 			children = (
-				2DA5398D1CD9161100F45446 /* CommonCrypto */,
-				2DD238651CDA33160008FB1A /* modules */,
+				2DA5398D1CD9161100F45446 /* libCommonCrypto */,
+				DA32302A1FA81FBD00265223 /* LibCommonCryptoTests */,
 				2DD238711CDA33990008FB1A /* Frameworks */,
 				2DA5398C1CD9161100F45446 /* Products */,
 			);
@@ -61,66 +80,20 @@
 		2DA5398C1CD9161100F45446 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2DA5398B1CD9161100F45446 /* iOS.framework */,
-				2DD238791CDA380E0008FB1A /* Mac.framework */,
+				2DA5398B1CD9161100F45446 /* CommonCrypto.framework */,
+				2DD238791CDA380E0008FB1A /* CommonCrypto.framework */,
+				DA3230291FA81FBD00265223 /* LibCommonCryptoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2DA5398D1CD9161100F45446 /* CommonCrypto */ = {
+		2DA5398D1CD9161100F45446 /* libCommonCrypto */ = {
 			isa = PBXGroup;
 			children = (
 				2DA5398E1CD9161100F45446 /* CommonCrypto.h */,
 				2DA539901CD9161100F45446 /* Info.plist */,
 			);
-			path = CommonCrypto;
-			sourceTree = "<group>";
-		};
-		2DD238651CDA33160008FB1A /* modules */ = {
-			isa = PBXGroup;
-			children = (
-				2DD2386B1CDA332B0008FB1A /* MacOS */,
-				2DD2386A1CDA332A0008FB1A /* tvOS */,
-				2DD238671CDA33230008FB1A /* WatchOS */,
-				2DD238661CDA331E0008FB1A /* iOS */,
-			);
-			name = modules;
-			sourceTree = "<group>";
-		};
-		2DD238661CDA331E0008FB1A /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				2DD238641CDA33130008FB1A /* module.modulemap */,
-			);
-			name = iOS;
-			path = modules/ios;
-			sourceTree = "<group>";
-		};
-		2DD238671CDA33230008FB1A /* WatchOS */ = {
-			isa = PBXGroup;
-			children = (
-				2DD2386C1CDA336B0008FB1A /* module.modulemap */,
-			);
-			name = WatchOS;
-			path = modules/watchos;
-			sourceTree = "<group>";
-		};
-		2DD2386A1CDA332A0008FB1A /* tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				2DD2386D1CDA33730008FB1A /* module.modulemap */,
-			);
-			name = tvOS;
-			path = modules/tvos;
-			sourceTree = "<group>";
-		};
-		2DD2386B1CDA332B0008FB1A /* MacOS */ = {
-			isa = PBXGroup;
-			children = (
-				2DD2386E1CDA33780008FB1A /* module.modulemap */,
-			);
-			name = MacOS;
-			path = modules/macos;
+			path = libCommonCrypto;
 			sourceTree = "<group>";
 		};
 		2DD238711CDA33990008FB1A /* Frameworks */ = {
@@ -131,6 +104,15 @@
 				2DD2386F1CDA33930008FB1A /* Security.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA32302A1FA81FBD00265223 /* LibCommonCryptoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA32302B1FA81FBD00265223 /* LibCommonCryptoTests.swift */,
+				DA32302D1FA81FBD00265223 /* Info.plist */,
+			);
+			path = LibCommonCryptoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +151,7 @@
 			);
 			name = iOS;
 			productName = CommonCrypto;
-			productReference = 2DA5398B1CD9161100F45446 /* iOS.framework */;
+			productReference = 2DA5398B1CD9161100F45446 /* CommonCrypto.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2DD238781CDA380E0008FB1A /* Mac */ = {
@@ -187,8 +169,26 @@
 			);
 			name = Mac;
 			productName = CommonCrypto;
-			productReference = 2DD238791CDA380E0008FB1A /* Mac.framework */;
+			productReference = 2DD238791CDA380E0008FB1A /* CommonCrypto.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		DA3230281FA81FBD00265223 /* LibCommonCryptoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA3230311FA81FBD00265223 /* Build configuration list for PBXNativeTarget "LibCommonCryptoTests" */;
+			buildPhases = (
+				DA3230251FA81FBD00265223 /* Sources */,
+				DA3230261FA81FBD00265223 /* Frameworks */,
+				DA3230271FA81FBD00265223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA3230301FA81FBD00265223 /* PBXTargetDependency */,
+			);
+			name = LibCommonCryptoTests;
+			productName = LibCommonCryptoTests;
+			productReference = DA3230291FA81FBD00265223 /* LibCommonCryptoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,6 +196,7 @@
 		2DA539821CD9161100F45446 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Bjarne Mogstad";
 				TargetAttributes = {
@@ -204,6 +205,11 @@
 					};
 					2DD238781CDA380E0008FB1A = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					DA3230281FA81FBD00265223 = {
+						CreatedOnToolsVersion = 9.0.1;
+						DevelopmentTeam = 52QH4V7DQZ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -221,6 +227,7 @@
 			targets = (
 				2DA5398A1CD9161100F45446 /* iOS */,
 				2DD238781CDA380E0008FB1A /* Mac */,
+				DA3230281FA81FBD00265223 /* LibCommonCryptoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +241,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2DD238771CDA380E0008FB1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA3230271FA81FBD00265223 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,7 +271,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA3230251FA81FBD00265223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA32302C1FA81FBD00265223 /* LibCommonCryptoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA3230301FA81FBD00265223 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA5398A1CD9161100F45446 /* iOS */;
+			targetProxy = DA32302F1FA81FBD00265223 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2DA539911CD9161100F45446 /* Debug */ = {
@@ -359,11 +389,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INFOPLIST_FILE = libCommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = modules/ios/module.modulemap;
+				MODULEMAP_FILE = libCommonCrypto/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = co.mogstad.CommonCrypto;
 				PRODUCT_NAME = CommonCrypto;
 				SKIP_INSTALL = YES;
@@ -379,11 +409,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INFOPLIST_FILE = libCommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = modules/ios/module.modulemap;
+				MODULEMAP_FILE = libCommonCrypto/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = co.mogstad.CommonCrypto;
 				PRODUCT_NAME = CommonCrypto;
 				SKIP_INSTALL = YES;
@@ -400,11 +430,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INFOPLIST_FILE = libCommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = modules/macos/module.modulemap;
+				MODULEMAP_FILE = libCommonCrypto/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = co.mogstad.CommonCrypto;
 				PRODUCT_NAME = CommonCrypto;
 				SDKROOT = macosx;
@@ -422,15 +452,75 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INFOPLIST_FILE = libCommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = modules/macos/module.modulemap;
+				MODULEMAP_FILE = libCommonCrypto/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = co.mogstad.CommonCrypto;
 				PRODUCT_NAME = CommonCrypto;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DA3230321FA81FBD00265223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52QH4V7DQZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LibCommonCryptoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gatherdigital.ios.LibCommonCryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA3230331FA81FBD00265223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52QH4V7DQZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LibCommonCryptoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gatherdigital.ios.LibCommonCryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -460,6 +550,15 @@
 			buildConfigurations = (
 				2DD2387F1CDA380E0008FB1A /* Debug */,
 				2DD238801CDA380E0008FB1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA3230311FA81FBD00265223 /* Build configuration list for PBXNativeTarget "LibCommonCryptoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA3230321FA81FBD00265223 /* Debug */,
+				DA3230331FA81FBD00265223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

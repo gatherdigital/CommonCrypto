@@ -17,18 +17,19 @@
     "osx": "10.9"
   },
   "ios": {
-    "module_map": "modules/ios/module.modulemap"
+    "module_map": "libCommonCrypto/module.modulemap"
   },
   "tvos": {
-    "module_map": "modules/tvos/module.modulemap"
+    "module_map": "libCommonCrypto/module.modulemap"
   },
   "osx": {
-    "module_map": "modules/macos/module.modulemap"
+    "module_map": "libCommonCrypto/module.modulemap"
   },
   "watchos": {
-    "module_map": "modules/watchos/module.modulemap"
+    "module_map": "libCommonCrypto/module.modulemap"
   },
+  "xcconfig": { "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/CommonCrypto" },
   "frameworks": "Security",
-  "source_files": ["CommonCrypto/*.h", "CommonCrypto/*.swift"],
+  "source_files": ["libCommonCrypto/*.h", "libCommonCrypto/*.swift"],
   "requires_arc": true
 }

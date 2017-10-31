@@ -1,0 +1,5 @@
+framework module CommonCrypto [system] {
+    umbrella header "CommonCrypto.h"
+    header "/usr/include/CommonCrypto/CommonCrypto.h"
+    export *
+}
